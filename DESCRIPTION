@@ -1,8 +1,8 @@
 Package: polykde
 Type: Package
 Title: Polyspherical Kernel Density Estimation
-Version: 1.1.7
-Date: 2025-07-27
+Version: 1.2.0
+Date: 2026-07-25
 Authors@R: c(person(given = "Eduardo", family = "García-Portugués",
                     role = c("aut", "cre"), email = "edgarcia@est-econ.uc3m.es",
                     comment = c(ORCID = "0000-0002-9224-4111")),
@@ -18,22 +18,22 @@ Description: Kernel density estimation on the polysphere, (hyper)sphere, and
 License: GPL-3
 LazyData: true
 Depends: R (>= 3.5.0)
-Imports: abind, doFuture, foreach, future, gsl, movMF, progressr, Rcpp
-        (>= 1.0.8.3), RcppProgress, rotasym, sphunif
-Suggests: alphashape3d, Bessel, DirStats, FixedPoint, ks, manipulate,
-        numDeriv, optimParallel, testthat, viridis, rgl, scatterplot3d,
-        sdetorus, smacof
+Imports: abind, Bessel, doFuture, foreach, future, gsl, movMF,
+        progressr, Rcpp (>= 1.0.8.3), RcppProgress, rotasym, sphunif
+Suggests: alphashape3d, DirStats, FixedPoint, ks, manipulate, numDeriv,
+        optimParallel, testthat, viridis, rgl, scatterplot3d, sdetorus,
+        smacof
 LinkingTo: Rcpp, RcppArmadillo, RcppProgress
 URL: https://github.com/egarpor/polykde
 BugReports: https://github.com/egarpor/polykde/issues
 Encoding: UTF-8
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 NeedsCompilation: yes
-Packaged: 2025-07-27 16:05:42 UTC; Eduardo
+Packaged: 2026-07-25 19:35:49 UTC; Eduardo
 Author: Eduardo García-Portugués [aut, cre] (ORCID:
     <https://orcid.org/0000-0002-9224-4111>),
   Andrea Meilán-Vila [ctb] (ORCID:
     <https://orcid.org/0000-0001-8537-9280>)
 Maintainer: Eduardo García-Portugués <edgarcia@est-econ.uc3m.es>
 Repository: CRAN
-Date/Publication: 2025-07-27 16:30:02 UTC
+Date/Publication: 2026-07-25 20:00:02 UTC
