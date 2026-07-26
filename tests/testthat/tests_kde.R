@@ -1,5 +1,6 @@
 
 # Randomize testing
+set.seed(1)
 r <- 2
 d <- c(1, 2)
 h <- runif(r, 0.2, 1.5)
@@ -162,7 +163,6 @@ test_that("Unnormalized product and spherically symmetric kernels coincide
 })
 
 test_that("Integration for spherically symmetric Epa kernel", {
-  skip("Unstable")
   h_small <- rep(0.5, r)
   expect_equal(prod(rotasym::w_p(p = d + 1)) *
                  mean(kde_polysph(x = x_int, X = X, d = d, h = h_small,
@@ -347,6 +347,7 @@ test_that("Equivalence with DirStats::kde_dir", {
 ## d = 2 for vMF kernel
 
 test_that("Integration for vMF kernel in d = 2", {
+  set.seed(4)
   x <- r_unif_polysph(n = 1e4, d = 2)
   X <- r_unif_polysph(n = 10, d = 2)
   h <- runif(1, 0.1, 1)

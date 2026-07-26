@@ -1,6 +1,7 @@
 
 ## Well-computed JSD for k = 2
 
+set.seed(2)
 r <- 3
 d <- rep(2, r)
 h1 <- rep(0.25, r)
@@ -128,6 +129,7 @@ test_that("Jensen--Shannon distance with cv_jsd = 2 and k = 2", {
 
 ## Well-computed JSD for k = 3
 
+set.seed(1)
 r <- 3
 d <- rep(2, r)
 h1 <- rep(0.25, r)
@@ -188,7 +190,6 @@ H_0_cv <- -mean(c(log(p[1] * exp(log_cv_kde_polysph(X = X1, d = d, h = h1)) +
                         p[3] * exp(log_cv_kde_polysph(X = X3, d = d, h = h3)))))
 
 test_that("Jensen--Shannon distance with Monte Carlo and k = 3", {
-  skip("Unstable")
   expect_equal(unname(hom_test_polysph(X = X, d = d, labels = labels,
                                        type = "jsd", h = h1, B = 1, M = M,
                                        cv_jsd = 123)$statistic),
@@ -215,6 +216,7 @@ test_that("Jensen--Shannon distance with cv_jsd = 2 and k = 3", {
 
 test_that("Tests do not reject H_0 when it is true", {
 
+  set.seed(2)
   d <- 2
   n <- 50
   h <- 0.5
@@ -245,6 +247,7 @@ test_that("Tests do not reject H_0 when it is true", {
 
 test_that("Tests reject H_0 when it is false", {
 
+  set.seed(1)
   d <- 1
   n <- 50
   h <- 0.5

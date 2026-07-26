@@ -36,3 +36,7 @@
 * Add a package logo.
 * And the reference García-Portugués and Meilán-Vila (2023) (doi:10.1007/978-3-031-32729-2_4) to CITATION.
 * Documentation improvements.
+
+# polykde 1.2.1
+
+* Unrandomize the tests in `tests_bwd.R`, `tests_distr.R`, `tests_grad_hess.R`, `tests_kde.R`, `tests_samplers.R`, and `tests_tests.R` to avoid spurious failures on some platforms.
